@@ -1,0 +1,201 @@
+// Grid
+$pad: 5%
+
+*
+	box-sizing: border-box
+
+.grid
+	margin: 0
+
+	&:after
+		content: ""
+		display: table
+		clear: both
+
+[class*='col-'] 
+	float: left
+	padding-right: $pad
+	.grid &:last-of-type 
+		padding-right: 0
+	
+.col-2-3 
+	width: 66.66%
+
+.col-1-3 
+	width: 33.33%
+
+.col-1-2 
+	width: 50%
+
+.col-1-4 
+	width: 25%
+
+.col-1-5 
+	width: 20%
+
+.col-1-8 
+	width: 12.5%
+
+
+/* Opt-in outside padding */
+.grid-pad 
+	padding: $pad 0 $pad $pad
+	[class*='col-']:last-of-type 
+		padding-right: $pad
+
+
+// Main styles
+$btn-color: #3f598c
+$main-color: #4c4c4c
+
+body
+	padding: 0
+	margin: 0
+
+	min-width: 1024px
+	
+	font-family: 'Roboto', sans-serif
+	font-size: 16px
+	color: $main-color
+
+	.clearfix
+		&:after
+			content: ""
+			display: table
+			clear: both
+
+	h2
+		margin-bottom: 50px
+
+	// title for inputs
+	.input-title
+		margin: 
+			bottom: 6px
+		font-size: 14px
+		color: #808080
+
+	// for inputs type text, password and for select
+	.input
+		display: block
+		margin: 
+			bottom: 20px
+		border: 1px solid #ccc
+		border-radius: 2px
+		outline: none
+
+		width: 100%
+		height: 48px
+		
+		// inputs placeholders
+		&[placeholder]
+			padding:
+				left: 15px
+				right: 15px
+			font-size: 1em
+
+		&.search-address
+			&[placeholder]
+				padding-left: 40px
+				background: url("../images/toolbar_find.png") no-repeat
+				background-size: 24px
+				background-position: 6px 10px
+
+	// buttons
+	.btn
+		display: block
+		margin: 
+			top: 20px
+			bottom: 20px
+		width: 100%
+		height: 60px
+		
+		border: 1px solid $btn-color
+		border-radius: 3px
+
+		text-align: center
+		line-height: 60px
+		text-decoration: none
+		
+		&.btn-sign-in
+			color: #fff
+			background-color: $btn-color
+			&:hover
+				background-image: linear-gradient( 0deg, rgba(0,0,0,.3) 0%, rgba(0,0,0,.1) 100%)
+		&.btn-register
+			color: $btn-color
+			&:hover
+				background: linear-gradient( 0deg, rgb(204,72,29) 0%, rgb(255,110,61) 100%)
+
+	
+	a.forgot-password
+		float: right
+		text-decoration: none
+		border-bottom: 1px dashed #000
+
+	// margin for lables
+	.label
+		margin: 
+			top: 20px
+			bottom: 20px
+		input
+			position: absolute
+		span
+			display: inline-block
+			padding-left: 24px
+			&.remember-me-title
+				font-size: 13px
+
+	// delivery address select
+	select.input
+		margin-bottom: 5px
+
+	.display-map
+		font-size: 14px
+		color: #808080
+
+	.social-icons
+		.social-icon
+			i
+				display: inline-block
+				width: 50px
+				height: 50px
+				border-radius: 2px
+
+				color: #fff
+				line-height: 50px
+				text-align: center
+				font-size: 20px
+
+
+				&.fa-facebook
+					background-color: #3e5c9a
+				&.fa-vk
+					background-color: #22668c
+				&.fa-twitter
+					background-color: #33ccff
+				&.fa-odnoklassniki
+					background-color: #ff9400
+				&.fa-google-plus
+					background-color: #dc4a3d
+
+	main
+		.col-1-3:last-child
+			h2
+				margin-bottom: 68px
+
+	footer
+		.grid-pad
+			padding:
+				top: 0
+				bottom: 0
+		border-top: 1px solid #ccc
+		width: 100%
+		
+		.input-title:first-child
+			margin-top: 34px
+
+		.main-btn
+			color: #fff
+			background-color: $btn-color
+			&:hover
+				background-image: linear-gradient( 0deg, rgba(0,0,0,.3) 0%, rgba(0,0,0,.1) 100%)
