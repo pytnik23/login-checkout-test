@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>login_checkout_test</title>
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.min.css">
+
+</head>
+<body>
+	<main>
+		<div class="grid grid-pad">
+
+
+			<!-- Authentication Form -->
+			<div class="col-1-3">
+				<h2>Особисті дані</h2>
+				<form id="authForm">
+					<div class="input-title">Введіть Email або телефон у форматі +380XXXXXXXXX:</div>
+					<input class="input" type="text" id="name" name="login" placeholder="Ваш логін">
+					
+					<div class="input-title">Введіть свій пароль:</div>
+					<input class="input" type="password" id="password" name="password" placeholder="Пароль">
+					<div class="label clearfix">
+						<label>
+							<input type="checkbox" name="remember-me" checked>
+							<span class="remember-me-title">Запам'ятати мене</span>
+						</label>
+						<a href="#" class="forgot-password">Нагадати пароль</a>
+					</div>
+					<a href="#" class="btn btn-sign-in">Увійти</a>
+					<a href="#" class="btn btn-register">Зареєструватися</a>
+				</form>
+				
+				<!-- Social Authentication -->
+				<div class="input-title">Або увійдіть, використовуючи соціальні мережі:</div>
+				<div class="grid social-icons">
+					<div class="col-1-5">
+						<div class="social-icon">
+							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="col-1-5">
+						<div class="social-icon">
+							<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="col-1-5">
+						<div class="social-icon">
+							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="col-1-5">
+						<div class="social-icon">
+							<a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
+						</div>
+					</div>
+					<div class="col-1-5">
+						<div class="social-icon">
+							<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+			<!-- Delivery Settings -->
+			<div class="col-1-3">
+				<h2>Спосіб отримання товару</h2>
+
+				<div class="input-title">Місто отримання наприклад, Київ</div>
+				<input class="input search-address" type="text" name="address" placeholder="Впишіть місто">
+				
+				<div class="label clearfix">
+					<label>
+						<input type="checkbox" name="delivery" checked>
+						<span>Самовивіз з Центру обслуговування 27</span>
+					</label>
+				</div>
+
+				<div class="input-title">Місце видачі / Ваша адреса отримання</div>
+				<select class="input" name="select-address" id="select-address">
+					<option value="6">Київ, вул. Берковецька, 6-В (Епіцентр)</option>
+					<option value="7">Київ, вул. Берковецька, 7-В (Епіцентр)</option>
+					<option value="8">Київ, вул. Берковецька, 8-В (Епіцентр)</option>
+				</select>
+				<a href="#" class="display-map">Дивитися на карті</a>
+
+				<div class="label">
+					<label>
+						<input type="checkbox" name="delivery">
+						<span>Доставка за вказаною адресою</span>
+					</label>
+				</div>
+				<div class="label">
+					<label>
+						<input type="checkbox" name="delivery">
+						<span>Самовивіз з відділеннь поштових операторів</span>
+					</label>
+				</div>	
+			</div>
+
+			<!-- Pay settings -->
+			<div class="col-1-3">
+				<h2>Спосіб оплати</h2>
+
+				<div class="label">
+					<label>
+						<input type="checkbox" name="delivery" checked>
+						<span>Розрахунок готівкою при отриманні</span>
+					</label>
+				</div>
+				<div class="label">
+					<label>
+						<input type="checkbox" name="delivery">
+						<span>Сплатити банківською картою на сайті</span>
+					</label>
+				</div>
+				<div class="label">
+					<label>
+						<input type="checkbox" name="delivery">
+						<span>
+							Розстрочка (до 6 мiсяцiв) <br/>
+							Кредит (до 36 мiсяцiв)
+						</span>
+					</label>
+				</div>
+			</div>
+
+		</div>
+	</main>
+
+	<footer>
+		<div class="grid grid-pad">
+
+			<!-- User License -->
+			<div class="col-1-3">
+				<div class="input-title">
+					Підтверджуючи замовлення, <br/>
+					Ви приймаєте умови <a href="#">угоди користувача</a>
+				</div>
+			</div>
+
+			<!-- Price -->
+			<div class="col-1-3">
+				<div class="input-title">Вартість послуг:</div>
+				<div class="input-title">Разом до сплати:</div>
+			</div>
+
+			<!-- Main Button -->
+			<div class="col-1-3">
+				<a href="#" class="btn main-btn">Підтвердити замовлення</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://use.fontawesome.com/a346b2cdfd.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

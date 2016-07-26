@@ -12,12 +12,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 	signInButton.onclick = function() {
 		if ( !regName.test(name.value) ) {
-			alert('Будь ласка, введіть ім`я!');
+			alert('Будь ласка, введіть ім`я!\nІм`я повино складатись не менше ніж з 3 символів і не містити спецсимволи!');
 			name.focus();
 			name.style.borderColor = 'red';
+			console.dir(name);
 			return;
 		} else if ( !regPassword.test(password.value) ) {
-			alert('Будь ласка, введіть пароль!');
+			alert('Будь ласка, введіть пароль!\nПароль повинен бути не менше 6 симфолів і не містити спецсимволи!');
 			password.focus();
 			password.style.borderColor = 'red';
 			return;
