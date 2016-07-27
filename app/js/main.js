@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		regPassword 	= /^[a-zA-Z0-9_-]{6,18}$/;
 
 	function tooltip(elem, msg) {
+		if (elem.nextElementSibling.classList.contains('input-tooltip')) {
+			return;
+		}
 		var div = document.createElement('div');
 		div.classList.add('input-tooltip');
 		div.setAttribute('title', msg);

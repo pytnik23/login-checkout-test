@@ -17,11 +17,13 @@
 			<div class="col-1-3">
 				<h2>Особисті дані</h2>
 				<form id="authForm">
+
 					<div class="input-title">Введіть Email або телефон у форматі +380XXXXXXXXX:</div>
 					<input class="input" type="text" id="name" name="login" placeholder="Ваш логін">
 					
 					<div class="input-title">Введіть свій пароль:</div>
 					<input class="input" type="password" id="password" name="password" placeholder="Пароль">
+
 					<div class="label clearfix">
 						<label>
 							<input type="checkbox" name="remember-me" checked>
@@ -36,31 +38,23 @@
 				<!-- Social Authentication -->
 				<div class="input-title">Або увійдіть, використовуючи соціальні мережі:</div>
 				<div class="grid social-icons">
-					<div class="col-1-5">
-						<div class="social-icon">
+					<ul>
+						<li>
 							<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						</div>
-					</div>
-					<div class="col-1-5">
-						<div class="social-icon">
+						</li>
+						<li>
 							<a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-						</div>
-					</div>
-					<div class="col-1-5">
-						<div class="social-icon">
+						</li>
+						<li>
 							<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-						</div>
-					</div>
-					<div class="col-1-5">
-						<div class="social-icon">
+						</li>
+						<li>
 							<a href="#"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
-						</div>
-					</div>
-					<div class="col-1-5">
-						<div class="social-icon">
+						</li>
+						<li>
 							<a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-						</div>
-					</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 			
@@ -144,8 +138,14 @@
 
 			<!-- Price -->
 			<div class="col-1-3">
-				<div class="input-title">Вартість послуг:</div>
-				<div class="input-title">Разом до сплати:</div>
+				<div class="input-title price-wrap">
+					Вартість послуг:
+					<span class="price services-price">0 <span class="currency">грн</span></span>
+				</div>
+				<div class="input-title price-wrap">
+					Разом до сплати:
+					<span class="price total-price">5 245 <span class="currency">грн</span></span>
+				</div>
 			</div>
 
 			<!-- Main Button -->
